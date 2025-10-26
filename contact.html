@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | My Summer Europe Trip</title>
+
+    <!-- Google Font (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">My Europe Trip</a>
+            
+            <!-- Hidden Checkbox for Mobile Toggle -->
+            <input type="checkbox" id="nav-toggle">
+            
+            <!-- Hamburger Menu Button -->
+            <label for="nav-toggle" class="hamburger-menu">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+            </label>
+
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="journey.html">My Journey</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Contact Page Content -->
+    <main>
+        <div class="page-container" style="max-width: 900px;">
+            <h1 class="page-header">Get In Touch</h1>
+            
+            <div class="content-card">
+                <p>
+                    Have a question about my trip or the exchange program? Feel free to send me a message!
+                </p>
+
+                <!-- 
+                  This is a non-functional form for Part 1 (HTML/CSS).
+                  The "action" attribute is "#" so it doesn't go anywhere.
+                -->
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 [Your Name Here]. All rights reserved.</p>
+        <p class="text-sm">A project built with HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
